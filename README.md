@@ -1,12 +1,13 @@
-## Welcome to GitHub Pages
+## Poética Computacional
 
-You can use the [editor on GitHub](https://github.com/mauxxy/mauxxy.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Este es un una pagina que contiene la deriva creativa, recorrida por Mauricio Román Miranda.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Aquí podrás encontrar audio, imagen, poesia, cybercultura digital.
 
-### Markdown
+### x_x
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+x_x es un poéma  conceptual que gira entre los codigos de los emoticons de IRC: X_X = Dead
+Pero también xx es la escencia femenina que toda arte tiene intrinsecamente.
 
 ```markdown
 Syntax highlighted code block
