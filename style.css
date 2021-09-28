@@ -1,7 +1,8 @@
 body {
     position: relative;
     overflow-x: hidden;
-    background-color: black;
+    background-color: silver;
+    background-image: linear-gradient(to bottom right, #a2b2bd, #def7f7);
 }
 body,
 html { height: 100%;}
