@@ -1,7 +1,7 @@
 body {
     position: relative;
     overflow-x: hidden;
-    background-color: black;
+    background-color: silver;
 }
 body,
 html { height: 100%;}
