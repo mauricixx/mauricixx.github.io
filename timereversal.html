@@ -12,12 +12,12 @@ p {
 }
 </style>
 </head>
-<body style="background-color:black">
+<body style="background-color:white">
 
 <p id="countdown"></p>
 
 <script>
-var countDownDate = new Date("Mar 11, 2022 00:00:00").getTime();
+var countDownDate = new Date("Mar 11, 2022 11:59:59").getTime();
 
 
 var x = setInterval(function() {
@@ -41,7 +41,7 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "<3";
+    document.getElementById("countdown").innerHTML = "NUNCA MÁS";
   }
 }, 1000);
 </script>
