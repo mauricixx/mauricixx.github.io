@@ -12,29 +12,6 @@ p {
 }
 </style>
   
-  <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .columna {
-            float: left;
-            width: 33%;
-            padding-right: 5px;
-        }
-
-        .fila::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        img {
-            /* Para que sea responsiva */
-            width: 100%;
-        }
-    </style>
-  
 </head>
 <body style="background-color:black">
 
@@ -65,10 +42,9 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "NUNCA MÁS";
+    document.getElementById("countdown").innerHTML = ""...El tiempo en reversa"";
   }
 }, 1000);
 </script>
-
 </body>
 </html>
