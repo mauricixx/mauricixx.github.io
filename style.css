@@ -93,9 +93,10 @@ a, a:hover, a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    color: #fff ;
 }
 #sidebar ul li a:hover {
-    color: #fff ;
+    color: #000;
     background: #transparent;
 }
 
@@ -226,4 +227,19 @@ a.article, a.article:hover {
         transform: rotate(-45deg) translate(1px, -1px);
     }
 
+}
+
+.center {
+margin: auto;
+width: 60%;
+border: 0px solid #fff;
+padding: 20px;
+}
+
+.center2 {
+margin: auto;
+width: 60%;
+border: 0px solid #fff;
+padding: 2px;
+color: #fff;
 }
