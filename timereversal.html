@@ -11,6 +11,30 @@ p {
   color: #fff;
 }
 </style>
+  
+  <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .columna {
+            float: left;
+            width: 33%;
+            padding-right: 5px;
+        }
+
+        .fila::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            /* Para que sea responsiva */
+            width: 100%;
+        }
+    </style>
+  
 </head>
 <body style="background-color:black">
 
@@ -46,8 +70,20 @@ var x = setInterval(function() {
 }, 1000);
 </script>
   
-<div class="container videocontainer">
-<a class="video-container bg-video-section-dark"><video controls="" src="https://ia601401.us.archive.org/4/items/screen-recording-2022-03-11-at-11.58.22/Eltiempoenreversa720x720.mp4" width="720" height="720" type="video/mp4" class="media-document mac video" alt="timereversal" preload></video></a><h2></h2>
+  <div class="fila">
+        <div class="columna">
+            <div class="container videocontainer">
+<a class="video-container bg-video-section-dark"><video controls="" src="https://ia601401.us.archive.org/4/items/screen-recording-2022-03-11-at-11.58.22/Eltiempoenreversa720x720.mp4" width="720" height="720" type="video/mp4" class="media-document mac video" alt="timereversal" preload></video></a>
+        </div>
+        <div class="columna">
+            <img src="https://picsum.photos/800/600">
+        </div>
+        <div class="columna">
+            <img src="https://picsum.photos/800/600">
+        </div>
+    </div>
+  
+<h2></h2>
 <h6></h6>
 <h2></h2>
 
