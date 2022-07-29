@@ -7,7 +7,7 @@ p {
   font-family: arial;
   text-align: center;
   font-size: 60px;
-  margin-top: 300px;
+  margin-top: 50px;
   color: #a2b2bd;
 }
 
@@ -28,77 +28,61 @@ h2 {
 }
 
 </style>
-<!-- Bootstrap CSS CDN -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<!-- Our Custom CSS -->
 <link rel="stylesheet" href="timestyle.css">
-
-<!-- Font Awesome JS -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-
 </head>
+<body style="background-color:#fff">
 
-<div class="center2">
-<p id="eltiempoenreversa"></p>
+<p id="cuentaprogresiva"></p>
 
-<div class="center2">
-<h2>El tiempo en reversa.</h2>
-<!-- <h6>Es un ejercicio poético que proyecta a traves de un reloj en cuenta regresiva la metafora sobre un viaje en el tiempo.</h6>
-<h6>Un viaje en múltiples direcciones, con la idea de encontrar un momento en el tiempo para conprenderlo, analizarlo y repensarlo para devolverla nuevamente como idea reestructurada.</h6> -->
-<h6></h6>
-<h2></h2>
-</div>
-
-<!-- <script>
-var countDownDate = new Date("Mar 11, 2022 12:10:00").getTime();
-
+<script>
+var start_at = new Date('Sep, 11, 1973 12:10:00').getTime();
 
 var x = setInterval(function() {
 
+    var now = new Date().getTime();
+
+    var distance = now - start_at;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    }
+}, 1000);
+</script>
+
+<p id="cuentaregresiva"></p>
+<script>
+var countDownDate = new Date("Sep 04, 2022 12:10:00").getTime();
+
+var x = setInterval(function() {
 
   var now = new Date().getTime();
 
-
   var distance = countDownDate - now;
-
 
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-
-  document.getElementById("eltiempoenreversa").innerHTML = days + "d " + hours + "h "
+  document.getElementById("cuentaregresiva").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("eltiempoenreversa").innerHTML = "NUNCA MÁS";
+    document.getElementById("cuentaregresiva").innerHTML = "Un Horizonte a la deriva";
   }
 }, 1000);
-</script> -->
-
-</div>
-
-<div class="center2">
-<p id="eltiempoenreversa"></p>
-
-<div class="center">
-<a class="video-container bg-video-section-dark"><video controls="" src="https://ia601401.us.archive.org/4/items/screen-recording-2022-03-11-at-11.58.22/Eltiempoenreversa720x720.mp4" width="380" height="380" type="video/mp4" class="media-document mac video" alt="timereversal" preload></video></a><h2></h2>
-
-<h6>Conjuro nº 0: NUNCA MÁS. 11-03-2022 / 12:10 A.M.</h6>
-<!-- <h6>Registro de los últimos 11 minutos de la cuenta 0</h6> -->
-
-</div>
-
-<div class="center2">
-<p id="eltiempoenreversa"></p>
-<div class="center2">
-
-</div>
+</script>
 
 </body>
 </html>
