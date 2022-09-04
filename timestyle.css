@@ -11,9 +11,10 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.8em;
     font-weight: 300;
     line-height: 1.7em;
+    margin-top: 150px;
     color: #fff;
 }
 
