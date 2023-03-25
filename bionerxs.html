@@ -1,0 +1,203 @@
+<!DOCTYPE html><html><head>
+
+  <!-- <div> lovely ascii-art <3 based in figlet :p made by X_x
+  <pre><p style="color:green">          _             _   </p></pre>
+  <pre><p style="color:green"> _ __ ___| |_ __ _ _ __| |_ </p></pre>
+  <pre><p style="color:green">| '__/ __| __/ _` | '__| __|</p></pre>
+  <pre><p style="color:green">| |  \__ \ || (_| | |  | |_ </p></pre>
+  <pre><p style="color:green">|_|  |___/\__\__,_|_|   \__|</p></pre>
+  </div> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poética computacional en la era de la caosificación de los datos</title>
+<style>
+
+
+ body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  height: 55px;
+  background-color: #000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding:10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #000;
+  color: #4CAF55;
+}
+
+.topnav a.active {
+  background-color: #000;
+  color: white;
+}
+
+.videocontainer {
+  overflow: hidden;
+  padding:16px 16px;
+  float: center;
+  height: 1920px;
+  background-color: silver;
+}
+</style>
+
+    <meta charset="utf-8">
+
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+    <!-- p5.js -->
+    <script src="xxyy.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="rstart.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <!-- <link href="rstart.css" rel="stylesheet"> -->
+
+    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- <link href="rstart.css" rel="stylesheet"> -->
+
+</head>
+
+<!-- x_x /rstart  html -->
+<!-- <body id="page-top" style="background-color:black"> -->
+<body style="background-color:silver">
+
+ <!-- <div><a href="https://rstartdas.github.io"><img src="img/rstart.logo.pq2.png" alt="rstart"></a></div> -->
+
+<!--<div class="topnav">
+  <a class="active" href="https://rstartdas.github.io"><img src="img/rstart.logo.pq2.png" alt="rstart"></a>
+  <a href="#about">?</a>
+  <a href="http://rstart.cl/tralka">TRALKA - [Prototipo]</a>
+  <a href="http://rstart.cl/mycelium">Mycelium::Mycelia</a>
+  <a href="#home"></a>
+  <a href="#news"></a>
+  <a href="#contact">@</a>
+</div> -->
+
+<!--<div style="padding-left:16px">
+  <h2></h2>
+  <p></p>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="https://github.com/rstartdas"><img src="img/rstart.logo.pq2.png" alt="rstart"></a>
+    <!--<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/rstart.logo.pq2.png" alt="rstart"></a> -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          rstart
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#"><code>$whoami</code></a></li> -->
+           <!-- <div class="dropdown"> -->
+           <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://rstart.cl/wip">projects</a></li> -->
+
+           <!-- <div class="dropdown">
+             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+             $ who w3 R
+             </button>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="#">Lia Moris + Mauricio Román</a>
+               <a class="dropdown-item" href="#">Nos interesa la simbiosis</a>
+               <a class="dropdown-item" href="#">arte+ciencia+tecnologia</a>
+               <a class="dropdown-item" href="#">Audio Data Visualizations,</a>
+               <a class="dropdown-item" href="#">Media Art, Creative Coding & Data Storyteller.</a>
+               <a class="dropdown-item" href="#">Desarrollamos Habilidades orientadas</a>
+               <a class="dropdown-item" href="#">a la programación computacional.</a>
+               <a class="dropdown-item" href="#">rstart son nuestras prácticas poéticas:</a>
+               <a class="dropdown-item" href="#">datos como relatos</a>
+               <a class="dropdown-item" href="#"></a>
+               <a class="dropdown-item" href="#"></a>
+               <!-- <a class="dropdown-item" href="">En presentaciones en vivo</a>
+               <a class="dropdown-item" href="">uso el nickname de X_X</a> -->
+               <!-- <a class="dropdown-item" href="">El nombre proviene de un juego</a>
+               <a class="dropdown-item" href="">de palabras que pensamos</a>
+               <a class="dropdown-item" href="">desde nuestro hacer,</a>
+               <a class="dropdown-item" href="">utilizando nomenclaturas que nos</a>
+               <a class="dropdown-item" href="">facilita el interés en la simbiosis</a>
+               <a class="dropdown-item" href="">r= are .......\</a>
+               <a class="dropdown-item" href="">s= science ....\__ are start</a>
+               <a class="dropdown-item" href="">t= technology ./</a>
+               <a class="dropdown-item" href="">art ........../</a>
+               <a class="dropdown-item" href=""></a>
+               <a class="dropdown-item" href="">+@me</a> -->
+             </div> -->
+             <!-- <div class="dropdown">
+             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             cd /Nod0s
+             </button>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="http://rstart.cl/mycelium">Mycelium:Mycelia</a>
+               <a class="dropdown-item" href="http://rstart.cl/tralka">Tralka</a>
+               <!-- <a class="dropdown-item" href="http://rstart.cl/datoscomorelatos">Datos como Relatos</a> -->
+             </div>
+           </div>
+           <!--  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://rstart.cl/mycelium"></a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://rstart.cl/tralka"></a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://rstart.cl/datoscomorelatos"></a></li>
+            <!-- <a class="mx-2" href="#!"><i class="fab fa-github"></i></a> -->
+          </ul>
+
+
+
+    <!-- </div>
+        <div class="intro-body">
+         <div class="container">
+           <div class="row">
+             <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Datos como Relatos</h1>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+    </nav> -->
+
+    <!-- Intro Header
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Datos como Relatos</h1>
+              <p class="intro-text"></p>
+              <a href="#rstart" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>-->
+
+    <!-- Footer-->
+    <!-- <footer class="footer bg-black small text-center text-white-50"><div class="container"></div></footer> -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
+<!-- <video controls="" autoplay="1" src="https://ia801402.us.archive.org/27/items/mycelia-audiovisual-experience-xx/Mycelia_1280x720hd.mp4" type="video/mp4" class="media-document mac video"></video> -->
