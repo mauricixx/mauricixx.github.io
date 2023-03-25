@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  font-family: arial;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 200px;
+  color: #a2b2bd;
+}
+</style>
+<link rel="stylesheet" href="timestyle.css">
+</head>
+<body style="background-color:#000">
+
+  <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="https://scontent.cdninstagram.com/v/t50.16885-16/301939679_1070461983594801_7303232083135393223_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjQ4MC5pZ3R2LmJhc2VsaW5lIiwicWVfZ3JvdXBzIjoiW1wiaWdfd2ViX2RlbGl2ZXJ5X3Z0c19vdGZcIl0ifQ&_nc_ht=instagram.fscl8-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=Lc9R_sWFnVYAX-3U1HD&edm=ABmJApABAAAA&vs=1270756207023784_3099086450&_nc_vs=HBksFQAYJEdOODcteEV4R1VkYWxNMERBTWR0aGF2aVNscGxidlZCQUFBRhUAAsgBABUAGCRHRmhULVJGQmo5elhuWG9EQUNiNkQ5VGVhTXdxYnZWQkFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMRUAACaG69rxtfbsPxUCKAJDMywXQFU5mZmZmZoYEmRhc2hfYmFzZWxpbmVfMl92MREAdewHAA%3D%3D&ccb=7-5&oh=00_AfC8ZJgbylMgXQr7JQmLXX9oqd_r_a7y_0zJFQnitbHrVQ&oe=6421569C&_nc_sid=6136e7" type="video/mp4">
+</video>
+
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1></h1>
+  <p id="cuentaregresiva"></p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()"></button>
+</div> -->
+
+
+<p id="cuentaregresiva"></p>
+<script>
+var start_at = new Date("Sep 11, 1973 12:10:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = start_at - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("cuentaregresiva").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+}, 1000);
+</script>
+
+<!-- <script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script> -->
+
+</body>
+</html>
