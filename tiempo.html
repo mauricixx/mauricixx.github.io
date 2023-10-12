@@ -10,104 +10,66 @@ p {
   margin-top: 50px;
   color: #a2b2bd;
 }
-
-h6 {
-  font-family: arial;
-  text-align: left;
-  font-size: 12px;
-  margin-top: 10px;
-  color: #a2b2bd;
-}
-
-h2 {
-  font-family: arial;
-  text-align: justify;
-  font-size: 12px;
-  margin-top: 5px;
-  color: #a2b2bd;
-}
-
 </style>
-<link rel="stylesheet" href="timestyle.css">
+<link rel="stylesheet" href="tiempostyle.css">
+<link href='https://fonts.cdnfonts.com/css/led-dot-matrix' rel='stylesheet' type='text/css'>
+
 </head>
 <body style="background-color:#000">
 
-<p id="cuentaprogresiva"></p>
+  <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="file:///Users/xx/Sites/XX/nave.mp4" type="video/mp4">
+</video>
 
-<script>
-var start_at = new Date('Sep, 11, 1973 00:00:00').getTime();
 
-var x = setInterval(function() {
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1></h1>
+  <p id="cuentaregresiva"></p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()"></button>
+</div> -->
 
-    var now = new Date().getTime();
 
-    var distance = now - start_at;
-
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    }
-}, 1000);
-</script>
-
-<!-- <p id="cuentaregresiva"></p>
-<script>
-var countDownDate = new Date("Sep 04, 2022 12:10:00").getTime();
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-
-  var distance = countDownDate - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("cuentaregresiva").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("cuentaregresiva").innerHTML = "Nunca Más";
-  }
-}, 1000);
-</script>
-
-  <!--
 <p id="cuentaregresiva"></p>
 <script>
-var countDownDate = new Date("Sep 04, 2022 12:10:00").getTime();
+var start_at = new Date("Sep 11, 1973 00:00:00").getTime();
 
 var x = setInterval(function() {
 
   var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+  var distance = start_at - now;
 
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("cuentaregresiva").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("cuentaregresiva").innerHTML = days + " dias. " + hours + " hrs. "
+  + minutes + " min. " + seconds + " sec. ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("cuentaregresiva").innerHTML = "Un Horizonte a la deriva... Vamos por ancho camino <3";
-  }
 }, 1000);
+</script>
+
+<!-- <script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
 </script> -->
 
 </body>
