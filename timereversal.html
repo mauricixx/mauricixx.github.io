@@ -1,63 +1,37 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 p {
   font-family: arial;
   text-align: center;
   font-size: 60px;
-  margin-top: 50px;
-  color: #a2b2bd;
+  margin-top: 80px;
+  color: #fff;
 }
-
-h6 {
-  font-family: arial;
-  text-align: left;
-  font-size: 12px;
-  margin-top: 10px;
-  color: #a2b2bd;
+#nocursor{
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: transparent;
+cursor: none;
+margin: 0;
+padding: 0;
+border: 0;
 }
-
-h2 {
-  font-family: arial;
-  text-align: justify;
-  font-size: 12px;
-  margin-top: 5px;
-  color: #a2b2bd;
-}
-
 </style>
-<link rel="stylesheet" href="timestyle.css">
 </head>
-<body style="background-color:#000">
+<body style="background-color:black">
+
+<div id="nocursor"></div>
+
 
 <p id="cuentaprogresiva"></p>
 
-<!-- <script>
-var start_at = new Date('Sep, 11, 1973 12:10:00').getTime();
-
-var x = setInterval(function() {
-
-    var now = new Date().getTime();
-
-    var distance = now - start_at;
-
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    }
-}, 1000);
-</script> -->
+  </script>
 
 <p id="cuentaregresiva"></p>
 <script>
@@ -84,31 +58,31 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
-  <!--
-<p id="cuentaregresiva"></p>
 <script>
-var countDownDate = new Date("Sep 04, 2022 12:10:00").getTime();
+var start_at = new Date('Sep, 11, 1973 12:10:00').getTime();
 
 var x = setInterval(function() {
 
-  var now = new Date().getTime();
+    var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+    var distance = now - start_at;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("cuentaregresiva").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+    document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("cuentaregresiva").innerHTML = "Un Horizonte a la deriva... Vamos por ancho camino <3";
-  }
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("cuentaprogresiva").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    }
 }, 1000);
-</script> -->
+
+
 
 </body>
 </html>
