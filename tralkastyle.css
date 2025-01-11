@@ -27,7 +27,7 @@ body {
 }*/
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(92deg, #fff 20.17%, #fff 47.06%, rgb(75, 123, 133) 71.85%);
+    background-image: linear-gradient(92deg, #ffffff 20.17%, #ffffff 47.06%, rgb(255, 255, 255) 71.85%);
 }
 
 p {
