@@ -4,11 +4,17 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-
+/*
 body {
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to bottom right, #a2b2bd, #def7f7);
 }
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(360deg, #a2b2bd 80.25%, #def7f7);
+}
+
 
 p {
     font-family: 'Poppins', sans-serif;
